@@ -22,12 +22,13 @@ class SongsAdapter(private val listSongs: List<Song>) : RecyclerView.Adapter<Son
     }
 
     override fun onBindViewHolder(holder: SongsViewHolder, position: Int) {
-        holder.bind(listSongs[position], position + 1)
+        holder.bind(listSongs[position])
     }
 }
 
+@Suppress("DEPRECATION")
 class SongsViewHolder(private val binding: ItemSongsBinding) : RecyclerView.ViewHolder(binding.root) {
-    fun bind(song: Song, i: Int) {
+    fun bind(song: Song) {
         val displayPosition = position + 1
         binding.tvSong.text = song.name
         binding.tvSinger.text = song.singer
