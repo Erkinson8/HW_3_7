@@ -21,10 +21,10 @@ class SongsFragment : Fragment() {
         Song("Монако", "Люся Чеботина", "3:09"),
         Song("Новый год", "Дисткотека Авария", "2:51"),
         Song("Полковник", "Би 2", "3:04"),
-        Song("Eminem", "Afraid", "4:00"),
-        Song("Linkin Park", "Numb", "3:15"),
-        Song("Dan Balan", "Chica Bomb", "3:10"),
-        Song("50 cent", "Candy shop", "2:56")
+        Song("Afraid", "Eminem", "4:00"),
+        Song("Numb", "Linkin Park", "3:15"),
+        Song("Chica Bomb", "Dan Balan", "3:10"),
+        Song("Candy shop", "50 cent", "2:56")
     )
 
     override fun onCreateView(
